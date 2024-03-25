@@ -27,7 +27,7 @@ struct peripheral_battery_state {
     uint8_t level;
 };
     
-static lv_color_t battery_image_buffer[ZMK_SPLIT_BLE_PERIPHERAL_COUNT][5 * 8];
+static lv_color_t battery_image_buffer[1][5 * 8];
 
 static void draw_battery(lv_obj_t *canvas, uint8_t level) {
     lv_canvas_fill_bg(canvas, lv_color_black(), LV_OPA_COVER);
