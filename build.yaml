@@ -15,7 +15,7 @@
 include:
   # ipadk
   - board: nice_nano_v2
-    shield: ipadk dongle_display
+    shield: ipadk
     artifact-name: ipadk
   - board: nice_nano_v2
     shield: settings_reset
