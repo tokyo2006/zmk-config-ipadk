@@ -52,6 +52,7 @@ RC(4,0) RC(4,1) RC(4,2)     RC(4,3)         RC(4,4)         RC(4,5)     RC(4,6) 
 			;
 
     };
+    
     center_encoder: encoder_center {
 		compatible = "alps,ec11";
 		label = "CENTER_ENCODER";
