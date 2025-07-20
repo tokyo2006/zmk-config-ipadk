@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: ipadk}
 layers:
   Qwery:
   - {t: '`', s: '~'}
@@ -165,7 +166,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
-  - '&dongle_bootload_macro'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -227,9 +228,9 @@ combos:
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
 - p: [14, 15]
-  k: '['
+  k: {t: '[', s: '{'}
 - p: [18, 19]
-  k: ']'
+  k: {t: ']', s: '}'}
 - p: [26, 25]
   k: (
 - p: [29, 30]
@@ -239,10 +240,10 @@ combos:
 - p: [39, 40]
   k: '}'
 - p: [15, 18]
-  k: \
+  k: {t: \, s: '|'}
 - p: [26, 29]
   k: '|'
 - p: [23, 24]
   k: +
 - p: [31, 32]
-  k: '='
+  k: {t: '=', s: +}
