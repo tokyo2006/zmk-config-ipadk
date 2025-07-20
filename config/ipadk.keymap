@@ -5,10 +5,11 @@
  */
 
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -79,30 +80,6 @@
         };
     };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-
-        dongle_bootload_macro: bootload_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bootloader>;
-            label = "BOOTLOAD_MACRO";
-        };
-    };
-
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -167,11 +144,11 @@
 
         Flash {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans      &trans                  &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans                  &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans                  &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans                  &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &bt BT_CLR  &dongle_bootload_macro  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans      &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &bt BT_CLR  &trans  &trans
             >;
 
             label = "Flash";
