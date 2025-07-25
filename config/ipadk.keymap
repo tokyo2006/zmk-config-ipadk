@@ -125,7 +125,7 @@
 &kp ENTER        &kp LEFT_CONTROL  &kp LEFT_COMMAND  &ltq 1 LEFT_ALT  &to 3   &ltq 2 SPACE  &kp RIGHT_COMMAND  &kp RALT  &kp RCTRL            &kp BSPC                 &as PIPE BACKSLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
             label = "Qwery";
         };
 
@@ -139,7 +139,7 @@
             >;
 
             label = "Navi";
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         Flash {
