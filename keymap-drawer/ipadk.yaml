@@ -53,7 +53,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: \, h: '|', s: '|'}
   Navi:
