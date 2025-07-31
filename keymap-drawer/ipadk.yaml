@@ -33,7 +33,7 @@ layers:
   - J
   - K
   - L
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: ;, h: ':', s: ':'}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -51,8 +51,8 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Navi}
   - {t: Mouse, h: toggle}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '''', h: '"', s: '"'}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: \, h: '|', s: '|'}
