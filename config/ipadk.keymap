@@ -118,11 +118,11 @@
 
         Qwery {
             bindings = <
-&as TILDE GRAVE  &kp N1            &kp N2            &kp N3           &kp N4  &kp N5        &kp N6             &kp N7    &kp N8               &kp N9                   &kp N0
-&kp TAB          &kp Q             &kp W             &kp E            &kp R   &kp T         &kp Y              &kp U     &kp I                &kp O                    &kp P
-&kp CAPS         &kp A             &kp S             &kp D            &kp F   &kp G         &kp H              &kp J     &kp K                &kp L                    &kp RET
-&kp LSHFT        &kp Z             &kp X             &kp C            &kp V   &kp B         &kp N              &kp M     &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH
-&kp ENTER        &kp LEFT_CONTROL  &kp LEFT_COMMAND  &ltq 1 LEFT_ALT  &to 3   &ltq 2 SPACE  &kp RIGHT_COMMAND  &kp RALT  &kp DELETE           &kp BSPC                 &as PIPE BACKSLASH
+&as TILDE GRAVE   &kp N1        &kp N2            &kp N3        &kp N4  &kp N5        &kp N6             &kp N7    &kp N8               &kp N9                   &kp N0
+&kp TAB           &kp Q         &kp W             &kp E         &kp R   &kp T         &kp Y              &kp U     &kp I                &kp O                    &kp P
+&kp CAPS          &kp A         &kp S             &kp D         &kp F   &kp G         &kp H              &kp J     &kp K                &kp L                    &kp RET
+&kp LSHFT         &kp Z         &kp X             &kp C         &kp V   &kp B         &kp N              &kp M     &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &ltq 1 SPACE  &to 3   &ltq 2 SPACE  &kp RIGHT_COMMAND  &kp RALT  &kp DELETE           &kp BSPC                 &as PIPE BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -144,11 +144,11 @@
 
         Flash {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans      &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans      &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &bt BT_CLR  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &as COLON SEMICOLON
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &as DOUBLE_QUOTES SINGLE_QUOTE
+&bt BT_CLR    &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Flash";
@@ -157,11 +157,11 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans     &trans  &trans           &trans         &trans             &trans
-&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans     &trans  &trans           &trans         &trans             &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &trans  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_COMMAND
-&trans  &trans  &trans          &trans          &trans           &trans     &trans  &trans           &trans         &trans             &trans
-&trans  &trans  &trans          &mkp LCLK       &to 0            &mkp RCLK  &trans  &trans           &trans         &trans             &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans     &trans     &trans  &trans
+&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &trans  &trans     &trans     &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans     &trans     &trans  &trans
+&trans  &trans  &trans          &trans          &to 0            &trans  &trans  &trans     &trans     &trans  &trans
             >;
 
             label = "Mouse";
