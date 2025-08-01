@@ -55,7 +55,7 @@ layers:
   - {t: '''', h: '"', s: '"'}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: \, h: '|', s: '|'}
+  - {t: '-', h: _, s: _}
   Navi:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
